@@ -1,3 +1,12 @@
+#joshdellaz fork:
+Ensure PlutoSDR is installed before running: https://wiki.analog.com/resources/tools-software/linux-software/gnuradio
+
+INSTRUCTIONS:
+Run /gnuradio/utils/demo_cli_rx.py in one terminal
+Run py /gnuradio/utils/demo_cli_tx.py in another terminal
+
+Max input power = 2.5 dBm
+
 # ex2_sdr
 Software Defined Radio software for Ex-Alta2 on-board computer and AlbertaSat ground station.
 

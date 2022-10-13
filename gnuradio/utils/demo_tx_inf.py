@@ -12,12 +12,6 @@ tx_sock.connect(tx_server_address)
 addr = input('Enter destination node address')
 
 while True:
-	to_send = input('Enter some text to send:')
-	to_send = "$$$$" + addr + ":" + to_send
-	to_send = to_send.encode('ascii')
-	stuffing = (pdu - len(to_send))*' '
-	to_send = to_send + stuffing.encode('ascii')
-	tx_sock.send(to_send)
-	
+	tx_sock.send((0x44).to_bytes(1, 'big'))	
 
 
